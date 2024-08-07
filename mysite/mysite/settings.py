@@ -115,6 +115,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
+    Path(__file__).resolve().parent.parent.parent / "node_modules/bootstrap/dist",
 ]
 
 # Default primary key field type
